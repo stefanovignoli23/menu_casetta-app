@@ -10,7 +10,7 @@ def load_data():
     return df
 
 if st.sidebar.button("🔄 Aggiorna il menu"):
-    load_data.clear()
+    st.cache_data.clear()
     st.rerun()
 
 df = load_data()
